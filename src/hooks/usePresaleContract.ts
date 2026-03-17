@@ -2,7 +2,7 @@ import { useState, useCallback } from 'react';
 import { ethers } from 'ethers';
 import { useAppKitProvider, useAppKitAccount } from '@reown/appkit/react';
 import { CONTRACTS, PRESALE_ABI, ERC20_ABI, DECIMALS } from '@/constants/contracts';
-import type { BrowserProvider } from 'ethers';
+
 
 export function usePresaleContract() {
   const { walletProvider } = useAppKitProvider('eip155');
